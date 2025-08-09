@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main  {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         GestorTareas gestor = new GestorTareas();
@@ -40,6 +40,7 @@ public class Main  {
         } while (opcion != 7);
 
     }
+
     private static void mostrarMenu() {
         System.out.println("\n=== MENÚ PRINCIPAL ===");
         System.out.println("1. Agregar tarea");
@@ -105,7 +106,7 @@ public class Main  {
 
         System.out.print("\nIngrese el número de la tarea a editar: ");
         int indice = scanner.nextInt() - 1;
-        scanner.nextLine(); // Limpiar el buffer
+        scanner.nextLine();
 
         System.out.println("Deje en blanco los campos que no desea modificar.");
 

@@ -60,5 +60,31 @@ public class Tarea {
             this.completada = completada;
         }
 
+public void mostrarInfo() {
+    String estado = completada ? "Completada" : "Pendiente";
+    System.out.println("Descripción: " + descripcion);
+    System.out.println("Fecha límite: " + fechaLimite);
+    System.out.println("Prioridad: " + prioridad);
+    System.out.println("Categoría: " + categoria);
+    System.out.println("Estado: " + estado);
+    System.out.println("----------------------------------");
+}
+
+public void marcarComoCompletada() {
+    this.completada = true;}
+public void editarTarea(String descripcion, String fechaLimite, String prioridad, String categoria) {
+    if (descripcion != null && !descripcion.isEmpty()) {
+        this.descripcion = descripcion;
+    }
+    if (fechaLimite != null && !fechaLimite.isEmpty()) {
+        this.fechaLimite = fechaLimite;
+    }
+    if (prioridad != null && !prioridad.isEmpty()) {
+        this.prioridad = prioridad;
+    }
+    if (categoria != null && !categoria.isEmpty()) {
+        this.categoria = categoria;
+    }
+}}
 
 
