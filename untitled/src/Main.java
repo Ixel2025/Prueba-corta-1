@@ -87,7 +87,7 @@ public class Main {
 
     private static void marcarCompletada(Scanner scanner, GestorTareas gestor) {
         if (gestor.cantidadTareas() == 0) {
-            System.out.println("No hay tareas para marcar.");
+            System.out.println("No hay tareas para7 marcar.");
             return;
         }
 

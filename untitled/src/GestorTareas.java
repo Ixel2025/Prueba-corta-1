@@ -42,7 +42,7 @@ public class GestorTareas {
     public void marcarTareaComoCompletada(int indice) {
         if (indice >= 0 && indice < listaTareas.size()) {
             listaTareas.get(indice).marcarComoCompletada();
-            System.out.println("Tarea marcada como completada.");
+            System.out.println("Tarea completada.");
         } else {
             System.out.println("Índice de tarea no válido.");
         }
